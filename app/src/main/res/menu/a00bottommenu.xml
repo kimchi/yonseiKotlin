@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/a00home"
+        android:icon="@drawable/menu_home_on"
+        android:enabled="true"
+        android:title="@string/menu_home"
+        />
+    <item
+        android:id="@+id/a00message"
+        android:icon="@drawable/menu_message_on"
+        android:enabled="true"
+        android:title="@string/menu_talk"
+        />
+    <item
+        android:id="@+id/a00alarm"
+        android:icon="@drawable/menu_noti_on"
+        android:enabled="true"
+        android:title="@string/menu_notifications"
+        />
+    <item
+        android:id="@+id/a00cal"
+        android:icon="@drawable/menu_cal_on"
+        android:enabled="true"
+        android:title="@string/menu_calendar"
+        />
+    <item
+        android:id="@+id/a00setting"
+        android:icon="@drawable/menu_more_on"
+        android:enabled="true"
+        android:title="@string/menu_more"
+        />
+</menu>

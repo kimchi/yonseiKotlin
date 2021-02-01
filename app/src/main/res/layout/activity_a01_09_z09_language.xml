@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".A01_09Z09Language">
+    <include
+        android:id="@+id/include2"
+        layout="@layout/a00_top_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/a00_bottom_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/a01_0909row1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/line_box"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="10dp"
+        android:text="한글"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2" />
+
+    <TextView
+        android:id="@+id/a01_0909row2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/line_box"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="10dp"
+        android:text="ENGLISH"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/a01_0909row1"
+        app:layout_constraintStart_toStartOf="@+id/a01_0909row1"
+        app:layout_constraintTop_toBottomOf="@+id/a01_0909row1" />
+
+    <TextView
+        android:id="@+id/a01_0909row3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/line_box"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="10dp"
+        android:text="日本語"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/a01_0909row2"
+        app:layout_constraintStart_toStartOf="@+id/a01_0909row2"
+        app:layout_constraintTop_toBottomOf="@+id/a01_0909row2" />
+
+    <ImageView
+        android:id="@+id/a01_0909rowpic1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/a01_0909row1"
+        app:layout_constraintEnd_toEndOf="@+id/a01_0909row1"
+        app:layout_constraintTop_toTopOf="@+id/a01_0909row1"
+        app:srcCompat="@drawable/check" />
+
+    <ImageView
+        android:id="@+id/a01_0909rowpic2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/a01_0909row2"
+        app:layout_constraintEnd_toEndOf="@+id/a01_0909row2"
+        app:layout_constraintTop_toTopOf="@+id/a01_0909row2"
+        app:srcCompat="@drawable/check" />
+
+    <ImageView
+        android:id="@+id/a01_0909rowpic3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/a01_0909row3"
+        app:layout_constraintEnd_toEndOf="@+id/a01_0909row3"
+        app:layout_constraintTop_toTopOf="@+id/a01_0909row3"
+        app:srcCompat="@drawable/check" />
+</androidx.constraintlayout.widget.ConstraintLayout>

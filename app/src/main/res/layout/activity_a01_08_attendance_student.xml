@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".A01_08AttendanceStudent">
+
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/a00_top_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/a00_bottom_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/a01_08MyInfoLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#696C71"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2">
+
+        <ImageView
+            android:id="@+id/a01_08Pic"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:paddingStart="20dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="3dp"
+            app:layout_constraintBottom_toBottomOf="@+id/a01_08IDNumber"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/a01_08Name"
+            app:srcCompat="@drawable/login_user_on" />
+
+        <TextView
+            android:id="@+id/a01_08Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingTop="8dp"
+            android:text="TextView"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toEndOf="@+id/a01_08Pic"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/a01_08IDNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="TextView"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="@+id/a01_08Name"
+            app:layout_constraintTop_toBottomOf="@+id/a01_08Name" />
+
+        <ImageView
+            android:id="@+id/a01_08Count1Pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/a01_08Count1text"
+            app:layout_constraintEnd_toStartOf="@+id/a01_08Count1text"
+            app:layout_constraintTop_toTopOf="@+id/a01_08Count1text"
+            app:srcCompat="@drawable/small_attendance_mark" />
+
+        <TextView
+            android:id="@+id/a01_08Count1text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/a01_08activityStat1"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/a01_08Count1Count"
+            app:layout_constraintEnd_toStartOf="@+id/a01_08Count1Count"
+            app:layout_constraintTop_toTopOf="@+id/a01_08Count1Count" />
+
+        <TextView
+            android:id="@+id/a01_08Count1Count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="12"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/a01_08Count1Pic2"
+            app:layout_constraintEnd_toStartOf="@+id/a01_08Count1Pic2"
+            app:layout_constraintTop_toTopOf="@+id/a01_08Count1Pic2" />
+
+        <TextView
+            android:id="@+id/a01_08Count1text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/a01_08activityStat2"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/a01_08Count2Count"
+            app:layout_constraintEnd_toStartOf="@+id/a01_08Count2Count"
+            app:layout_constraintTop_toTopOf="@+id/a01_08Count2Count" />
+
+        <TextView
+            android:id="@+id/a01_08Count2Count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="12"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/a01_08Name" />
+
+        <ImageView
+            android:id="@+id/a01_08Count1Pic2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/a01_08Count1text2"
+            app:layout_constraintEnd_toStartOf="@+id/a01_08Count1text2"
+            app:layout_constraintTop_toTopOf="@+id/a01_08Count1text2"
+            app:srcCompat="@drawable/small_absence_mark" />
+
+        <TextView
+            android:id="@+id/a01_08Count1text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a01_08activityStat3"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/a01_08Count3Count"
+            app:layout_constraintStart_toStartOf="@+id/a01_08Count1text"
+            app:layout_constraintTop_toTopOf="@+id/a01_08Count3Count" />
+
+        <TextView
+            android:id="@+id/a01_08Count3Count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/a01_08Count1Pic4"
+            app:layout_constraintStart_toStartOf="@+id/a01_08Count1Count"
+            app:layout_constraintTop_toTopOf="@+id/a01_08Count1Pic4" />
+
+        <ImageView
+            android:id="@+id/a01_08Count1Pic3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/a01_08Count1text3"
+            app:layout_constraintStart_toStartOf="@+id/a01_08Count1Pic"
+            app:layout_constraintTop_toTopOf="@+id/a01_08Count1text3"
+            app:srcCompat="@drawable/small_lateness_mark" />
+
+        <TextView
+            android:id="@+id/a01_08Count1text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a01_08activityStat4"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/a01_08Count4Count"
+            app:layout_constraintStart_toStartOf="@+id/a01_08Count1text2"
+            app:layout_constraintTop_toTopOf="@+id/a01_08Count4Count" />
+
+        <ImageView
+            android:id="@+id/a01_08Count1Pic4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/a01_08Count1text4"
+            app:layout_constraintStart_toStartOf="@+id/a01_08Count1Pic2"
+            app:layout_constraintTop_toTopOf="@+id/a01_08Count1text4"
+            app:srcCompat="@drawable/small_etc_mark" />
+
+        <TextView
+            android:id="@+id/a01_08Count4Count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="8dp"
+            android:text="12"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/a01_08IDNumber"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/a01_08SubjectSelect"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#535658"
+        android:paddingStart="20dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="100dp"
+        android:paddingBottom="8dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/a01_08MyInfoLayout" />
+
+    <ImageView
+        android:id="@+id/a01_08SubjectSelectArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:paddingEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/a01_08SubjectSelect"
+        app:layout_constraintEnd_toEndOf="@+id/a01_08SubjectSelect"
+        app:layout_constraintTop_toTopOf="@+id/a01_08SubjectSelect"
+        app:srcCompat="@drawable/arrow_view_down" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <TextView
+        android:id="@+id/a01_08Periods"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/a01_08layoutdate"
+        app:layout_constraintEnd_toStartOf="@+id/guideline18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/a01_08SubjectSelect" />
+
+    <TextView
+        android:id="@+id/a01_08Periods1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/a01_08activityPeriod"
+        app:layout_constraintEnd_toStartOf="@+id/guideline19"
+        app:layout_constraintStart_toStartOf="@+id/guideline18"
+        app:layout_constraintTop_toBottomOf="@+id/a01_08SubjectSelect" />
+
+    <TextView
+        android:id="@+id/a01_08Periods2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/a01_08layoutstatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline19"
+        app:layout_constraintTop_toBottomOf="@+id/a01_08SubjectSelect" />
+
+    <ListView
+        android:id="@+id/a01_08AttendanceStudentList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/a01_08Periods1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

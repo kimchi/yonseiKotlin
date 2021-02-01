@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".A01_04Z01AdobeConnect">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/a01_04Z01SubjectText"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/a01_04z01layoutSubject"
+                android:textColor="@color/gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/a01_04Z01Subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="24dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="@+id/a01_04Z01SubjectText"
+                app:layout_constraintStart_toEndOf="@+id/a01_04Z01SubjectText"
+                app:layout_constraintTop_toTopOf="@+id/a01_04Z01SubjectText" />
+
+            <TextView
+                android:id="@+id/a01_04Z01StartTimeText"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/a01_04z01layoutStart"
+                android:textColor="@color/gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/a01_04Z01SubjectText" />
+
+            <TextView
+                android:id="@+id/a01_04Z01StartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="24dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="@+id/a01_04Z01StartTimeText"
+                app:layout_constraintStart_toEndOf="@+id/a01_04Z01StartTimeText"
+                app:layout_constraintTop_toTopOf="@+id/a01_04Z01StartTimeText"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/a01_04Z01EndTimeText"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/a01_04z01layoutEnd"
+                android:textColor="@color/gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/a01_04Z01StartTimeText" />
+
+            <TextView
+                android:id="@+id/a01_04Z01EndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="24dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="@+id/a01_04Z01EndTimeText"
+                app:layout_constraintStart_toEndOf="@+id/a01_04Z01EndTimeText"
+                app:layout_constraintTop_toTopOf="@+id/a01_04Z01EndTimeText"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/a01_04Z01ContentText"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/a01_04z01layoutContent"
+                android:textColor="@color/gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/a01_04Z01EndTimeText" />
+
+            <TextView
+                android:id="@+id/a01_04Z01Content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:text="TextView"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/a01_04Z01ContentText"
+                app:layout_constraintTop_toBottomOf="@+id/a01_04Z01ContentText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+    <TextView
+        android:id="@+id/a01_04Z01Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

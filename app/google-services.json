@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "735522763993",
+    "firebase_url": "https://coursemos-mobile-f4275.firebaseio.com",
+    "project_id": "coursemos-mobile-f4275",
+    "storage_bucket": "coursemos-mobile-f4275.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735522763993:android:8c16c6a30f5a7659",
+        "android_client_info": {
+          "package_name": "kr.coursemos.yonsei"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735522763993-ocasnpkti64smagunt6u2ards6rcj3km.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh9hx7-zrZyIG2seRQ_6OMb-UBJKJD-tQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "735522763993-ocasnpkti64smagunt6u2ards6rcj3km.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "735522763993-kr3gq0s53ij0c9311qukfm0ibd8e6n9p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "kr.coursemos.ios2",
+                "app_store_id": "1142523906"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

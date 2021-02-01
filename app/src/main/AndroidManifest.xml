@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.coursemos.yonsei">
+
+    <permission
+        android:name="dalbit.yonsei.finish"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.hardware.camera" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="dalbit.yonsei.finish" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.YonseiKotlin">
+        <activity android:name="kr.coursemos.yonsei.A01_50Camera"></activity>
+        <activity
+            android:name="kr.coursemos.yonsei.A01_15Z01ScheduleDetail"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_09Z10Auth"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_09Z08Inquiry"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_09Z06Version"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_09Z04AlarmSetting"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_09Z11OTP"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_09Setting"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_15Schedule"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_16ChattingList"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_22VideoView"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_23YouTube"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_18MyReport"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_08Z91AutoAttendanceStudent"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_08AttendanceStudent"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_07Z91AutoAttendanceTeacher"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_07AttendanceTeacher"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_06StudentList"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_05ProfessorList"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_13Z02WebView"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_13WebView"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_04Z01AdobeConnect"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_09Z02MyInfo"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_03Z01TimeTable"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_09Z05Z01LockScreen"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_04SubjectDetail"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A00_00Debug"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_02Z95LoginJNU"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_02Z94LoginMokpo"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_02Z92LoginSoonChunHyang"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_09Z09Language"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_02Z93Loginjbnu"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_02Z91LoginSeoul"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_03SubjectList"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_24BiopassPUSH"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_20Alarm"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_11Chatting"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_02Login"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.A01_01Scheme"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="coursemos2" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="kr.coursemos.yonsei.A01_00Intro"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="kr.coursemos.yonsei.A00_01Login"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="kr.coursemos.yonsei.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="kr.coursemos.yonsei.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service
+            android:name="kr.coursemos.yonsei.A10_00FCMReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <!-- <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/> -->
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver> <!-- Enable Google Play Store Campaign reports -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_notify_coursemos" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="coursemos" />
+        <meta-data android:name="com.google.android.gms.version" />
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.analytics.CampaignTrackingService"
+            android:enabled="true" />
+    </application>
+
+</manifest>

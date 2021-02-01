@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_line_box">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/a01_04weeklyheader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/a01_04weeklyname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="23dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toStartOf="@+id/a01_04weeklydetailbutton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/a01_04weeklydetailbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/a01_04weeklyname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/a01_04weeklyname"
+            app:srcCompat="@drawable/arrow_view_down" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/a01_04weeklybottom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/a01_04weeklyheader"
+        app:layout_constraintTop_toBottomOf="@+id/a01_04weeklyheader">
+
+        <TextView
+            android:id="@+id/a01_04weeklydetailtext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_line_box"
+            android:gravity="start|top"
+            android:linksClickable="true"
+            android:paddingStart="23dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="23dp"
+            android:paddingBottom="8dp"
+            android:textColorLink="@color/blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/a01_04weeklyiconlist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/a01_04weeklydetailtext"></LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

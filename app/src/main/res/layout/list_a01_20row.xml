@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottomlinewhite">
+
+    <ImageView
+        android:id="@+id/a01_20pic"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/a01_20bottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/a01_20top"
+        app:srcCompat="@drawable/a00_0200menu_profile_default" />
+
+    <TextView
+        android:id="@+id/a01_20top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:paddingStart="5dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:singleLine="true"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/a01_20pic"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/a01_20middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:paddingStart="5dp"
+        android:paddingEnd="20dp"
+        android:singleLine="true"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/a01_20top"
+        app:layout_constraintTop_toBottomOf="@+id/a01_20top" />
+
+    <TextView
+        android:id="@+id/a01_20bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:paddingStart="5dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp"
+        android:singleLine="true"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/a01_20middle"
+        app:layout_constraintTop_toBottomOf="@+id/a01_20middle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

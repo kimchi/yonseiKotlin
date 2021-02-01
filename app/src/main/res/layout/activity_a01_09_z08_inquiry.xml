@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".A01_09Z08Inquiry">
+
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/a00_top_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/a00_bottom_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/a01_09z08Emailtext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/a01_09z08layoutText1"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/a01_09z08Email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/qna_mail_input_box"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="@string/a01_09z08layoutEmailHint"
+                android:inputType="textPersonName"
+                android:maxLength="50"
+                android:paddingStart="5dp"
+                android:paddingEnd="50dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/a01_09z08Emailtext"
+                app:layout_constraintStart_toStartOf="@+id/a01_09z08Emailtext"
+                app:layout_constraintTop_toBottomOf="@+id/a01_09z08Emailtext" />
+
+            <ImageView
+                android:id="@+id/a01_09z08Clear"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/a01_09z08Email"
+                app:layout_constraintEnd_toEndOf="@+id/a01_09z08Email"
+                app:layout_constraintTop_toTopOf="@+id/a01_09z08Email"
+                app:srcCompat="@drawable/qna_mail_box_del_button" />
+
+            <TextView
+                android:id="@+id/a01_09z08InquiryListtext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/a01_09z08layoutText2"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/a01_09z08Emailtext"
+                app:layout_constraintTop_toBottomOf="@+id/a01_09z08Email" />
+
+            <TextView
+                android:id="@+id/a01_09z08InquiryList"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/qna_select_box"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="50dp"
+                android:paddingBottom="10dp"
+                android:text="TextView"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/a01_09z08InquiryListtext"
+                app:layout_constraintStart_toStartOf="@+id/a01_09z08InquiryListtext"
+                app:layout_constraintTop_toBottomOf="@+id/a01_09z08InquiryListtext" />
+
+            <TextView
+                android:id="@+id/a01_09z08Contenttext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/a01_09z08layoutText3"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/a01_09z08Emailtext"
+                app:layout_constraintTop_toBottomOf="@+id/a01_09z08InquiryList" />
+
+            <EditText
+                android:id="@+id/a01_09z08Content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/qna_write_box"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/a01_09z08layoutContentHint"
+                android:inputType="textMultiLine"
+                android:maxLength="2000"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/a01_09z08Contenttext"
+                app:layout_constraintStart_toStartOf="@+id/a01_09z08Contenttext"
+                app:layout_constraintTop_toBottomOf="@+id/a01_09z08Contenttext" />
+
+            <TextView
+                android:id="@+id/a01_09z08Pictext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/a01_09z08layoutpictext"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/a01_09z08Emailtext"
+                app:layout_constraintTop_toBottomOf="@+id/a01_09z08Content" />
+
+            <ImageView
+                android:id="@+id/a01_09z08Pic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/qna_write_box"
+                app:layout_constraintEnd_toEndOf="@+id/a01_09z08Pictext"
+                app:layout_constraintStart_toStartOf="@+id/a01_09z08Pictext"
+                app:layout_constraintTop_toBottomOf="@+id/a01_09z08Pictext" />
+
+            <TextView
+                android:id="@+id/a01_09z08bottomtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/a01_09z08layoutText5"
+                android:textColor="#F1754C"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@+id/a01_09z08Pic"
+                app:layout_constraintStart_toStartOf="@+id/a01_09z08Pic"
+                app:layout_constraintTop_toBottomOf="@+id/a01_09z08Pic" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

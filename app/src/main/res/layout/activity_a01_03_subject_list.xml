@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".A01_03SubjectList">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/a01_03MyInfoLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#696C71"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/a01_13Pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:minWidth="60dp"
+            android:minHeight="60dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/info" />
+
+        <TextView
+            android:id="@+id/a01_13Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="이름"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/a01_13IDNumber"
+            app:layout_constraintStart_toEndOf="@+id/a01_13Pic"
+            app:layout_constraintTop_toTopOf="@+id/a01_13Pic"
+            app:layout_constraintVertical_bias="0.36"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <TextView
+            android:id="@+id/a01_13IDNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="정보1"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/a01_13IDNumber2"
+            app:layout_constraintStart_toStartOf="@+id/a01_13Name"
+            app:layout_constraintTop_toBottomOf="@+id/a01_13Name" />
+
+        <TextView
+            android:id="@+id/a01_13IDNumber2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="정보2"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/a01_13Pic"
+            app:layout_constraintStart_toStartOf="@+id/a01_13Name"
+            app:layout_constraintTop_toBottomOf="@+id/a01_13IDNumber" />
+
+        <TextView
+            android:id="@+id/a01_13Month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/a01_13Day"
+            app:layout_constraintEnd_toEndOf="@+id/a01_13Day"
+            app:layout_constraintStart_toStartOf="@+id/a01_13Day"
+            app:layout_constraintTop_toTopOf="@+id/a01_13Pic" />
+
+        <TextView
+            android:id="@+id/a01_13Day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="12"
+            android:textSize="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/a01_13Pic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/a01_13Month" />
+
+        <ImageView
+            android:id="@+id/a01_13myinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/a01_13Name"
+            app:layout_constraintStart_toEndOf="@+id/a01_13Name"
+            app:layout_constraintTop_toTopOf="@+id/a01_13Name"
+            app:srcCompat="@drawable/info_white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/a01_03refresh"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/a01_03MyInfoLayout">
+
+        <ListView
+            android:id="@+id/a01_03SubjectList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EFEEF4" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/a00_bottom_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="100dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

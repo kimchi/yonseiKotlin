@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".A01_15Z01ScheduleDetail">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/a00_top_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/a00_bottom_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/a01_15Z01Subject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2" />
+
+    <TextView
+        android:id="@+id/a01_15Z01Term"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/lightgray"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@+id/a01_15Z01Subject"
+        app:layout_constraintStart_toStartOf="@+id/a01_15Z01Subject"
+        app:layout_constraintTop_toBottomOf="@+id/a01_15Z01Subject" />
+
+    <View
+        android:id="@+id/a01_15Z01line"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/lightgray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/a01_15Z01Term" />
+
+    <TextView
+        android:id="@+id/a01_15Z01ContentText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/a01_15z01layoutMemo"
+        android:textColor="@color/lightgray"
+        app:layout_constraintEnd_toEndOf="@+id/a01_15Z01Term"
+        app:layout_constraintStart_toStartOf="@+id/a01_15Z01Term"
+        app:layout_constraintTop_toBottomOf="@+id/a01_15Z01line" />
+
+    <TextView
+        android:id="@+id/a01_15Z01Content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/a01_15Z01ContentText"
+        app:layout_constraintStart_toStartOf="@+id/a01_15Z01ContentText"
+        app:layout_constraintTop_toBottomOf="@+id/a01_15Z01ContentText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
